@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 15em;
+    line-height: 0.75;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* margin: 0 auto; */
+    margin-right: 50px;
+}
+
+li {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.active {
+    color: #000000;
+    opacity: 0.4;
+}
+
+.bg-image img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px;
+}
+
+/* all card images  */
+.card img {
+    /* box-shadow: 0 4 #00000050 4px; */
+    border-radius: 15px;
+    opacity: 0.7;
+    transition: all;
+    transition-duration: 500ms;
+    height: 300px;
+    width: auto;
+    box-shadow: 20px #000000;
+}
+
+.card img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant: normal;
+    margin-left: 100px;
+}
+
+iframe {
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cardsText-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 900px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.card-text p {
+    margin: 0;
+    font-size: 1.5em;
+    width: 50%;
+}
+
+/* Infos page Cards  */
+.card-text img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: .9;
+    transition: all;
+    transition-duration: 500ms;
+    margin-left: 20px;
+}
+
+.card-text img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 890px) {
+    .cards {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .title {
+        font-size: 10em;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+
+    .cardsText-section {
+        max-width: none;
+    }
+
+    .card-text {
+        flex-direction: column;
+    }
+
+    .card-text p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .card-text img {
+        margin-top: 20px;
+        margin-left: 0;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 8em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
+
+    .card-text img {
+        height: 200px;
+    }
+}
